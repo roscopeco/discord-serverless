@@ -1,6 +1,6 @@
 ## Utility library for serverless Discord apps
 
-This is a (currently very simply) library that eases development of serverless Discord
+This is a (currently very simple) library that eases development of serverless Discord
 app and bots.
 
 Currently, it targets AWS Lambda only, and provides a decorator and some utility
