@@ -1,2 +1,4 @@
 /.idea/
 /discord-serverless.iml
+/dist/
+/src/discord_serverless.egg-info/
