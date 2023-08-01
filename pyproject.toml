@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "discord-serverless"
-version = "1.0.0"
+version = "2023.1001-alpha"
 description = "Simplified serverless Discord bot interactions"
 readme = "README.md"
 authors = [{ name = "Ross Bamford", email = "roscopeco@gmail.com" }]
