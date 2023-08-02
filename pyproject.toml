@@ -40,10 +40,6 @@ push = true
 "pyproject.toml" = [
     'current_version = "{version}"',
 ]
-"README.md" = [
-    "{version}",
-    "{pep440_version}",
-]
 
 [tool.black]
 py36 = true
