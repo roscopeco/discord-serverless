@@ -6,6 +6,8 @@
 import json
 from typing import Callable, Any
 
+import requests as requests
+from requests import Response
 from nacl.signing import VerifyKey
 from nacl.exceptions import BadSignatureError
 
@@ -133,7 +135,22 @@ def discord_unknown_command_response(command: str) -> dict[str, Any]:
 
     :param command: Command to parrot in the response error message
     """
+
     return {"statusCode": 400, "body": json.dumps(f"Unknown command: {command}")}
+
+
+def discord_webhook_reply(content: str, app_id: str, token: str) -> Response:
+    """Post a follow-up reply to a discord webhook interaction
+
+    :param content The message content.
+    :param app_id The app_id (from Discord).
+    :param token The interaction token (provided when your webhook was called).
+    """
+
+    return requests.post(
+        f"https://discord.com/api/v10/webhooks/{app_id}/{token}",
+        json={"content": content},
+    )
 
 
 def discord_verify_signature(
