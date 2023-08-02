@@ -1,5 +1,7 @@
 ## Utility library for serverless Discord apps
 
+![PyPI](https://img.shields.io/pypi/v/discord-serverless)
+
 This is a (currently very simple) library that eases development of serverless Discord
 app and bots.
 
